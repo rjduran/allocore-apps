@@ -35,7 +35,7 @@ public:
             verts.push_back(Vec3d(i*i, (i+1)*i, (i+2)*i));
         }
 
-        myfile.open ("/Users/rjduran/code/AlloProject/AlloSystem/allocore-apps/write_xyz/data.xyz");
+        myfile.open("/Users/rjduran/code/AlloProject/AlloSystem/allocore-apps/write_xyz/data.xyz");
 
         for (std::vector<Vec3d>::iterator it = verts.begin() ; it != verts.end(); ++it) {
             myfile << float(it->x) << " " << float(it->y) << " " << float(it->z) << std::endl;
